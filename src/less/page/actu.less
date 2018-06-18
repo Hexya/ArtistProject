@@ -1,0 +1,97 @@
+.main-home-wrapper-container {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  .actu-side {
+    width: 340px;
+    background: white;
+    box-shadow: 0 0 0.3em gainsboro;
+    .right-bloc{
+      overflow: hidden;
+      .search-title, .abo-title, .soc-title  {
+        height: 50px;
+        width: 350px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 1px solid rgb(246, 246, 246);
+        font-size: 1.1em;
+        outline: none;
+        font-family: 'Roboto Condensed', sans-serif;
+      }
+      .search-bar {
+        margin-top: 20px;
+        border-style: none;
+        width: 100%;
+        height: 50px;
+        background-color: rgb(246,246,246);
+        background-image: url('https://cdn1.iconfinder.com/data/icons/hawcons/32/698627-icon-111-search-128.png');
+        background-size: 7%;
+        background-position: 8px 12px;
+        background-repeat: no-repeat;
+        padding-left: 40px;
+      }
+      .search-bar:focus {
+        box-shadow: inset 0 0 0 gold, 0 0 0.5em grey;
+        outline: none;
+      }
+      .abo-bloc {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+      }
+      .abo-title {
+        margin-top: 40px;
+      }
+      .abo-img-cont {
+        margin-top: 20px;
+        background-color: var(--grey);
+        height: 320px;
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        border-bottom: 1px solid var(--gold);
+      }
+      .abo-img {
+        margin-top: 10px;
+        height: 300px;
+        width: 90%;
+        background-image: url("https://cdn.shopify.com/s/files/1/1248/7893/products/53-inked_feb13_cover_pattonsuicide-edit_grande.png?v=1479143687");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        cursor: pointer;
+      }
+      .soc-bloc {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      .soc-title {
+        margin-top: 40px;
+      }
+      .soc-log {
+        width: 80%;
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-around;
+        font-size: 2em;
+      }
+      .log {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        cursor: pointer;
+         p {
+          font-size: 0.4em;
+          font-family: 'Open Sans Condensed', sans-serif;
+        }
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+}

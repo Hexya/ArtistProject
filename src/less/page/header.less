@@ -1,0 +1,46 @@
+    .head-cont {
+        height: 350px;
+        width: 100%;
+        background-color: lightgrey;
+        .head-menu {
+            height: 60px;
+            width: 100%;
+            position: fixed;
+            background-color: rgba(252,252,252,0.7);
+            box-shadow: 0 0 0.3em rgb(220, 220, 220);
+            z-index: 4;
+            .list-menu {
+                list-style: none;
+                display: flex;
+                align-items: center;
+                font-family: 'Roboto Condensed', sans-serif;
+                li {
+                    padding: 21px 10px 21px 10px;
+                    margin-top: -13px;
+                    cursor: pointer;
+                }
+                li:not(:first-child):hover {
+                    background-color: rgba(139, 139, 139,0.8);
+                    transition: .3s;
+                    color: white;
+                }
+                li img {
+                    height: 40px;
+                }
+            }
+        }
+        .head-menu-back {
+            height: 60px;
+            width: 100%;
+            background-color: rgb(252,252,252);
+        }
+        .head-ban {
+            height: 290px;
+            width: 100%;
+            background-color: lightgrey;
+            background-image: url('../../img/bannieres.jpg');
+            background-position: bottom;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+    }
